@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <title>App</title>
+    <style>
+        form {
+            display: inline-flex;
+            flex-direction: column;
+            gap:8px;
+        }
+    </style>
+</head>
+<body>
+<h1>{{ title }}</h1>
+<form method="POST" action="/documents" enctype="multipart/form-data">
+    <label for="filename">
+        Filename:
+        <input id="filename" type="text" name="filename" required />
+    </label>
+
+    <input type="file" name="file" />
+
+    <button type="submit">Upload</button>
+</form>
+</body>
+</html>

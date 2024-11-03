@@ -1,0 +1,21 @@
+meta {
+  name: POST_documents_query_id
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8000/documents/query/3
+  body: formUrlEncoded
+  auth: none
+}
+
+body:json {
+  {
+    "text": "Does this applicat have exprience with react native?"
+  }
+}
+
+body:form-urlencoded {
+  text: Does he has experience with React Native?
+}
